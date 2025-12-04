@@ -25,7 +25,7 @@ class Application {
         if (ENABLE_CONTROL_INTERFACE) {
             controlParams = new frida.EndpointParameters({
                 address: "::1",
-                port: 27042,
+                port: 19999,
                 authentication: {
                     scheme: "callback",
                     callback: this._authenticate
